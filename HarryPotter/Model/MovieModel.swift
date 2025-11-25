@@ -28,7 +28,7 @@ struct MovieModel: Codable {
     let wiki: String
 }
 
-struct GetMovieDataResponse: Codable {
+struct GetMovieDataResponse: Codable, Identifiable {
     let id: String
     let type: String
     let attributes: MovieModel

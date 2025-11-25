@@ -1,5 +1,5 @@
 //
-//  BookView.swift
+//  MovieListView.swift
 //  HarryPotter
 //
 //  Created by stephan on 25/11/25.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct BookView: View {
-    @StateObject var viewModel = BookViewModel()
+struct MovieListView: View {
+    @StateObject var viewModel = MovieViewModel()
     
     var body: some View {
         
-        Text("Books")
+        Text("Movies")
             .font(.title)
         
         List(
-            viewModel.books?.data ?? []
+            viewModel.movies?.data ?? []
         ) { data in
             HStack(
                 spacing: 15
@@ -24,7 +24,7 @@ struct BookView: View {
                 
                 AsyncImage(
                     url: URL(
-                        string: data.attributes.cover
+                        string: data.attributes.poster
                     ),
                     scale: 1,
                     content: { image in
@@ -48,7 +48,7 @@ struct BookView: View {
                 VStack(alignment: .leading) {
                     Text("Title: \(data.attributes.title)")
                     Text("Release: \(data.attributes.releaseDate)")
-                    Text("Author: \(data.attributes.author)")
+                    Text("Duration: \(data.attributes.runningTime)")
                 }
             }
             
@@ -58,11 +58,11 @@ struct BookView: View {
         )
         .task {
             await viewModel
-                .loadBooks()
+                .loadMovies()
         }
     }
 }
 
 #Preview {
-    BookView()
+    MovieListView()
 }

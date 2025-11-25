@@ -1,5 +1,5 @@
 //
-//  TodayView.swift
+//  MoreView.swift
 //  HarryPotter
 //
 //  Created by stephan on 25/11/25.
@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-struct TodayView: View {
+struct MoreView: View {
     var body: some View {
-        VStack {
-            
-        }
+        Text("Work on progress!!!")
     }
 }
 
 #Preview {
-    TodayView()
+    MoreView()
 }
