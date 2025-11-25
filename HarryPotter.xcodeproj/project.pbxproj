@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D410E0502ED5B30F00D83F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D410E0372ED5B30E00D83F36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D410E03E2ED5B30E00D83F36;
+			remoteInfo = HarryPotter;
+		};
+		D410E05A2ED5B30F00D83F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D410E0372ED5B30E00D83F36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D410E03E2ED5B30E00D83F36;
+			remoteInfo = HarryPotter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D410E03F2ED5B30E00D83F36 /* HarryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D410E04F2ED5B30F00D83F36 /* HarryPotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarryPotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D410E0592ED5B30F00D83F36 /* HarryPotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarryPotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D410E0412ED5B30E00D83F36 /* HarryPotter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HarryPotter;
+			sourceTree = "<group>";
+		};
+		D410E0522ED5B30F00D83F36 /* HarryPotterTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HarryPotterTests;
+			sourceTree = "<group>";
+		};
+		D410E05C2ED5B30F00D83F36 /* HarryPotterUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HarryPotterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D410E03C2ED5B30E00D83F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D410E04C2ED5B30F00D83F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D410E0562ED5B30F00D83F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D410E0362ED5B30E00D83F36 = {
+			isa = PBXGroup;
+			children = (
+				D410E0412ED5B30E00D83F36 /* HarryPotter */,
+				D410E0522ED5B30F00D83F36 /* HarryPotterTests */,
+				D410E05C2ED5B30F00D83F36 /* HarryPotterUITests */,
+				D410E0402ED5B30E00D83F36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D410E0402ED5B30E00D83F36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D410E03F2ED5B30E00D83F36 /* HarryPotter.app */,
+				D410E04F2ED5B30F00D83F36 /* HarryPotterTests.xctest */,
+				D410E0592ED5B30F00D83F36 /* HarryPotterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D410E03E2ED5B30E00D83F36 /* HarryPotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D410E0632ED5B30F00D83F36 /* Build configuration list for PBXNativeTarget "HarryPotter" */;
+			buildPhases = (
+				D410E03B2ED5B30E00D83F36 /* Sources */,
+				D410E03C2ED5B30E00D83F36 /* Frameworks */,
+				D410E03D2ED5B30E00D83F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D410E0412ED5B30E00D83F36 /* HarryPotter */,
+			);
+			name = HarryPotter;
+			packageProductDependencies = (
+			);
+			productName = HarryPotter;
+			productReference = D410E03F2ED5B30E00D83F36 /* HarryPotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D410E04E2ED5B30F00D83F36 /* HarryPotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D410E0662ED5B30F00D83F36 /* Build configuration list for PBXNativeTarget "HarryPotterTests" */;
+			buildPhases = (
+				D410E04B2ED5B30F00D83F36 /* Sources */,
+				D410E04C2ED5B30F00D83F36 /* Frameworks */,
+				D410E04D2ED5B30F00D83F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D410E0512ED5B30F00D83F36 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D410E0522ED5B30F00D83F36 /* HarryPotterTests */,
+			);
+			name = HarryPotterTests;
+			packageProductDependencies = (
+			);
+			productName = HarryPotterTests;
+			productReference = D410E04F2ED5B30F00D83F36 /* HarryPotterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D410E0582ED5B30F00D83F36 /* HarryPotterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D410E0692ED5B30F00D83F36 /* Build configuration list for PBXNativeTarget "HarryPotterUITests" */;
+			buildPhases = (
+				D410E0552ED5B30F00D83F36 /* Sources */,
+				D410E0562ED5B30F00D83F36 /* Frameworks */,
+				D410E0572ED5B30F00D83F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D410E05B2ED5B30F00D83F36 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D410E05C2ED5B30F00D83F36 /* HarryPotterUITests */,
+			);
+			name = HarryPotterUITests;
+			packageProductDependencies = (
+			);
+			productName = HarryPotterUITests;
+			productReference = D410E0592ED5B30F00D83F36 /* HarryPotterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D410E0372ED5B30E00D83F36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D410E03E2ED5B30E00D83F36 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D410E04E2ED5B30F00D83F36 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D410E03E2ED5B30E00D83F36;
+					};
+					D410E0582ED5B30F00D83F36 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D410E03E2ED5B30E00D83F36;
+					};
+				};
+			};
+			buildConfigurationList = D410E03A2ED5B30E00D83F36 /* Build configuration list for PBXProject "HarryPotter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D410E0362ED5B30E00D83F36;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D410E0402ED5B30E00D83F36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D410E03E2ED5B30E00D83F36 /* HarryPotter */,
+				D410E04E2ED5B30F00D83F36 /* HarryPotterTests */,
+				D410E0582ED5B30F00D83F36 /* HarryPotterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D410E03D2ED5B30E00D83F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D410E04D2ED5B30F00D83F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D410E0572ED5B30F00D83F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D410E03B2ED5B30E00D83F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D410E04B2ED5B30F00D83F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D410E0552ED5B30F00D83F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D410E0512ED5B30F00D83F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D410E03E2ED5B30E00D83F36 /* HarryPotter */;
+			targetProxy = D410E0502ED5B30F00D83F36 /* PBXContainerItemProxy */;
+		};
+		D410E05B2ED5B30F00D83F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D410E03E2ED5B30E00D83F36 /* HarryPotter */;
+			targetProxy = D410E05A2ED5B30F00D83F36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D410E0612ED5B30F00D83F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D410E0622ED5B30F00D83F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D410E0642ED5B30F00D83F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HarryPotter/Preview Content\"";
+				DEVELOPMENT_TEAM = R5Z572B6J9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephan.HarryPotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D410E0652ED5B30F00D83F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HarryPotter/Preview Content\"";
+				DEVELOPMENT_TEAM = R5Z572B6J9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephan.HarryPotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D410E0672ED5B30F00D83F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5Z572B6J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephan.HarryPotterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarryPotter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HarryPotter";
+			};
+			name = Debug;
+		};
+		D410E0682ED5B30F00D83F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5Z572B6J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephan.HarryPotterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarryPotter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HarryPotter";
+			};
+			name = Release;
+		};
+		D410E06A2ED5B30F00D83F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5Z572B6J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephan.HarryPotterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HarryPotter;
+			};
+			name = Debug;
+		};
+		D410E06B2ED5B30F00D83F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5Z572B6J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephan.HarryPotterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HarryPotter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D410E03A2ED5B30E00D83F36 /* Build configuration list for PBXProject "HarryPotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D410E0612ED5B30F00D83F36 /* Debug */,
+				D410E0622ED5B30F00D83F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D410E0632ED5B30F00D83F36 /* Build configuration list for PBXNativeTarget "HarryPotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D410E0642ED5B30F00D83F36 /* Debug */,
+				D410E0652ED5B30F00D83F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D410E0662ED5B30F00D83F36 /* Build configuration list for PBXNativeTarget "HarryPotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D410E0672ED5B30F00D83F36 /* Debug */,
+				D410E0682ED5B30F00D83F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D410E0692ED5B30F00D83F36 /* Build configuration list for PBXNativeTarget "HarryPotterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D410E06A2ED5B30F00D83F36 /* Debug */,
+				D410E06B2ED5B30F00D83F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D410E0372ED5B30E00D83F36 /* Project object */;
+}
