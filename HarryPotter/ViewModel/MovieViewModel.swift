@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 @MainActor
 class MovieViewModel: ObservableObject {
@@ -13,6 +14,7 @@ class MovieViewModel: ObservableObject {
     
     @Published var movies: GetListOfMoviesResponse?
     @Published var movie: GetSingleMovieResponse?
+    @Published var path = NavigationPath()
     
     private var tasks: [Task<Void, Never>] = []
     

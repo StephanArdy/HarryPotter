@@ -11,6 +11,7 @@ import Foundation
 class SpellViewModel: ObservableObject {
     let spellService = SpellService()
     
+    var spellData: GetListOfSpellsResponse?
     @Published var spells: GetListOfSpellsResponse?
     @Published var spell: GetSingleSpellResponse?
     
@@ -21,13 +22,26 @@ class SpellViewModel: ObservableObject {
         tasks = []
     }
     
-    func loadSpells(number: Int) async {
+    var currentPage = 1
+    var totalPages = 1
+    
+    func loadSpells() async {
         print("Running loadSpells...")
         let task = Task {
             do {
                 let size = 10
-                spells = try await spellService.getListOfSpells(number: number, size: size)
-                print("spells: \(String(describing: spells))")
+                spellData = try await spellService.getListOfSpells(number: currentPage, size: size)
+                
+                if spells == nil {
+                    spells = spellData
+                } else {
+                    guard let spellData = spellData else { return }
+                    spells?.data.append(contentsOf: spellData.data)
+                    spells?.meta = spellData.meta
+                    spells?.links = spellData.links
+                }
+                
+                totalPages = spells?.meta.pagination?.last ?? 0
             } catch {
                 print(error)
             }
@@ -46,5 +60,13 @@ class SpellViewModel: ObservableObject {
             }
         }
         tasks.append(task)
+    }
+    
+    func loadNextPage() async {
+        await loadSpells()
+    }
+    
+    func canLoadMore() -> Bool {
+        return currentPage <= totalPages
     }
 }

@@ -12,6 +12,7 @@ protocol BookServiceProtocol {
     func getBookByID(bookID: String) async throws -> GetSingleBookResponse
     func getListOfChapters(bookID: String) async throws -> GetListOfChaptersResponse
     func getChapterOfBook(bookID: String, chapterID: String) async throws -> GetSingleChapterResponse
+    func getRandomBook(number: Int) async throws -> GetListOfBooksResponse
 }
 
 class BookService: BookServiceProtocol {
@@ -94,6 +95,27 @@ class BookService: BookServiceProtocol {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let result = try decoder.decode(GetSingleChapterResponse.self, from: data)
+            return result
+        } catch {
+            throw NetworkingError.invalidData
+        }
+    }
+    
+    func getRandomBook(number: Int) async throws -> GetListOfBooksResponse {
+        let endpoint = "https://api.potterdb.com/v1/books?page[number]=\(number)&page[size]=3"
+        
+        guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw NetworkingError.invalidResponse
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let result = try decoder.decode(GetListOfBooksResponse.self, from: data)
             return result
         } catch {
             throw NetworkingError.invalidData

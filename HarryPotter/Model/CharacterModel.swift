@@ -22,6 +22,7 @@ struct CharacterModel: Codable {
     let house: String?
     let image: String?
     let jobs: [String]?
+    let maritalStatus: String?
     let name: String?
     let nationality: String?
     let patronus: String?
@@ -35,7 +36,7 @@ struct CharacterModel: Codable {
     let wiki: String?
 }
 
-struct GetCharacterDataResponse: Codable {
+struct GetCharacterDataResponse: Codable, Identifiable {
     let id: String
     let type: String
     let attributes: CharacterModel
@@ -43,9 +44,9 @@ struct GetCharacterDataResponse: Codable {
 }
 
 struct GetListOfCharactersResponse: Codable {
-    let data: [GetCharacterDataResponse]
-    let meta: Meta
-    let links: Links
+    var data: [GetCharacterDataResponse]
+    var meta: Meta
+    var links: Links
 }
 
 struct GetSingleCharacterResponse: Codable {

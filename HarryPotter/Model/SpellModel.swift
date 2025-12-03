@@ -20,7 +20,7 @@ struct SpellModel: Codable {
     let wiki: String?
 }
 
-struct GetSpellDataResponse: Codable {
+struct GetSpellDataResponse: Codable, Identifiable {
     let id: String
     let type: String
     let attributes: SpellModel
@@ -28,9 +28,9 @@ struct GetSpellDataResponse: Codable {
 }
 
 struct GetListOfSpellsResponse: Codable {
-    let data: [GetSpellDataResponse]
-    let meta: Meta
-    let links: Links
+    var data: [GetSpellDataResponse]
+    var meta: Meta
+    var links: Links
 }
 
 struct GetSingleSpellResponse: Codable {

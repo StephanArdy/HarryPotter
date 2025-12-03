@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct BookView: View {
-    @StateObject var viewModel = BookViewModel()
+    @EnvironmentObject var viewModel: BookViewModel
+    @EnvironmentObject var navVM: NavigationViewModel
     
     var body: some View {
         
         Text("Books")
-            .font(.title)
+            .font(.title2)
+            .padding(.bottom, 15)
         
         List(
             viewModel.books?.data ?? []
@@ -51,6 +53,9 @@ struct BookView: View {
                     Text("Author: \(data.attributes.author)")
                 }
             }
+            .onTapGesture {
+                navVM.goToBookDetailView(id: data.id)
+            }
             
         }
         .listStyle(
@@ -65,4 +70,6 @@ struct BookView: View {
 
 #Preview {
     BookView()
+        .environmentObject(BookViewModel())
+        .environmentObject(NavigationViewModel())
 }

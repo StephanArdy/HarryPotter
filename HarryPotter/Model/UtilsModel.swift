@@ -21,7 +21,7 @@ struct Pagination: Codable {
 }
 
 struct Links: Codable {
-    let `self`: String
+    let `self`: String?
     let current: String?
     let next: String?
     let last: String?

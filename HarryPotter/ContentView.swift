@@ -70,7 +70,7 @@ struct ContentView: View {
             Button("Get Spell Page 1", action: {
                 Task {
                     print("Trigger Get Spell Page 1")
-                    await spellVM.loadSpells(number: 1)
+                    await spellVM.loadSpells()
                 }
                 
             })
@@ -78,7 +78,7 @@ struct ContentView: View {
             Button("Get Spell Page 2", action: {
                 Task {
                     print("Trigger Get Spell Page 2")
-                    await spellVM.loadSpells(number: 2)
+                    await spellVM.loadSpells()
                 }
                 
             })
@@ -94,16 +94,16 @@ struct ContentView: View {
             
             Button("Get Character Page 1", action: {
                 Task {
-                    print("Trigger Get Spell Page 1")
-                    await characterVM.loadCharacters(number: 1)
+                    print("Trigger Get Character Page 1")
+                    await characterVM.loadCharacters(isDescending: false)
                 }
                 
             })
             
             Button("Get Character Page 2", action: {
                 Task {
-                    print("Trigger Get Spell Page 2")
-                    await characterVM.loadCharacters(number: 2)
+                    print("Trigger Get Character Page 2")
+                    await characterVM.loadCharacters(isDescending: false)
                 }
                 
             })
@@ -120,7 +120,7 @@ struct ContentView: View {
             Button("Get Potion Page 1", action: {
                 Task {
                     print("Trigger Get Potion Page 1")
-                    await potionVM.loadPotions(number: 1)
+                    await potionVM.loadPotions()
                 }
                 
             })
@@ -128,7 +128,7 @@ struct ContentView: View {
             Button("Get Potion Page 2", action: {
                 Task {
                     print("Trigger Get Potion Page 2")
-                    await potionVM.loadPotions(number: 2)
+                    await potionVM.loadPotions()
                 }
                 
             })

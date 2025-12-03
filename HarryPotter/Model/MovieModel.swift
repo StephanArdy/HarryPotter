@@ -8,24 +8,24 @@
 import Foundation
 
 struct MovieModel: Codable {
-    let boxOffice: String
-    let budget: String
-    let cinematographers: [String]
-    let directors: [String]
-    let distributors: [String]
-    let editors: [String]
-    let musicComposers: [String]
-    let poster: String
-    let producers: [String]
-    let rating: String
-    let releaseDate: String
-    let runningTime: String
-    let screenwriters: [String]
-    let slug: String
-    let summary: String
-    let title: String
-    let trailer: String
-    let wiki: String
+    let boxOffice: String?
+    let budget: String?
+    let cinematographers: [String]?
+    let directors: [String]?
+    let distributors: [String]?
+    let editors: [String]?
+    let musicComposers: [String]?
+    let poster: String?
+    let producers: [String]?
+    let rating: String?
+    let releaseDate: String?
+    let runningTime: String?
+    let screenwriters: [String]?
+    let slug: String?
+    let summary: String?
+    let title: String?
+    let trailer: String?
+    let wiki: String?
 }
 
 struct GetMovieDataResponse: Codable, Identifiable {

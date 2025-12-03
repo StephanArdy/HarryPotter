@@ -27,7 +27,7 @@ struct ChapterBook: Codable {
     let book: ChapterBookData
 }
 
-struct GetChapterDataResponse: Codable {
+struct GetChapterDataResponse: Codable, Identifiable {
     let id: String
     let type: String
     let attributes: ChapterModel

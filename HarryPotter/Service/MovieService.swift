@@ -10,6 +10,7 @@ import Foundation
 protocol MovieServiceProtocol {
     func getListOfMovies() async throws -> GetListOfMoviesResponse
     func getMovieByID(movieID: String) async throws -> GetSingleMovieResponse
+    func getRandomMovie(number: Int) async throws -> GetListOfMoviesResponse
 }
 
 class MovieService: MovieServiceProtocol {
@@ -49,6 +50,27 @@ class MovieService: MovieServiceProtocol {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let result = try decoder.decode(GetSingleMovieResponse.self, from: data)
+            return result
+        } catch {
+            throw NetworkingError.invalidData
+        }
+    }
+    
+    func getRandomMovie(number: Int) async throws -> GetListOfMoviesResponse {
+        let endpoint = "https://api.potterdb.com/v1/movies?page[number]=\(number)&page[size]=3"
+        
+        guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw NetworkingError.invalidResponse
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let result = try decoder.decode(GetListOfMoviesResponse.self, from: data)
             return result
         } catch {
             throw NetworkingError.invalidData

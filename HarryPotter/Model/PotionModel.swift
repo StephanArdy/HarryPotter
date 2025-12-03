@@ -22,7 +22,7 @@ struct PotionModel: Codable {
     let wiki: String?
 }
 
-struct GetPotionDataResponse: Codable {
+struct GetPotionDataResponse: Codable, Identifiable {
     let id: String
     let type: String
     let attributes: PotionModel
@@ -30,9 +30,9 @@ struct GetPotionDataResponse: Codable {
 }
 
 struct GetListOfPotionsResponse: Codable {
-    let data: [GetPotionDataResponse]
-    let meta: Meta
-    let links: Links
+    var data: [GetPotionDataResponse]
+    var meta: Meta
+    var links: Links
 }
 
 struct GetSinglePotionResponse: Codable {
