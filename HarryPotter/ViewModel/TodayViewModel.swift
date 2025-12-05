@@ -26,8 +26,7 @@ class TodayViewModel: ObservableObject {
         print("Running loadBooks...")
         let task = Task {
             do {
-                let number = randomInt(max: 5)
-                books = try await bookService.getRandomBook(number: number)
+                books = try await bookService.getRandomBook()
                 print("books: \(String(describing: books))")
             } catch {
                 print(error)
@@ -40,8 +39,7 @@ class TodayViewModel: ObservableObject {
         print("Running loadMovies...")
         let task = Task {
             do {
-                let number = randomInt(max: 10)
-                movies = try await movieService.getRandomMovie(number: number)
+                movies = try await movieService.getRandomMovie()
                 print("movies: \(String(describing: movies))")
             } catch {
                 print(error)

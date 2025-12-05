@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HarryPotter.xcscheme_^#shared#^_</key>
+		<key>Development.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Production.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D410E03E2ED5B30E00D83F36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D410E04E2ED5B30F00D83F36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D410E0582ED5B30F00D83F36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

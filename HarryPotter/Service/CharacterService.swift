@@ -14,8 +14,12 @@ protocol CharacterServiceProtocol {
 }
 
 struct CharacterService: CharacterServiceProtocol {
+    
+    static let env = EnvironmentManager.standard
+    let harryPotterAPIKey = CharacterService.env.endpoint
+    
     func getListOfCharacters(number: Int, size: Int) async throws -> GetListOfCharactersResponse {
-        let endpoint = "https://api.potterdb.com/v1/characters?page[number]=\(number)&page[size]=\(size)&sort=name"
+        let endpoint = "\(harryPotterAPIKey ?? "")characters?page[number]=\(number)&page[size]=\(size)&sort=name"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -36,7 +40,7 @@ struct CharacterService: CharacterServiceProtocol {
     }
     
     func getListOfCharactersDescending(number: Int, size: Int) async throws -> GetListOfCharactersResponse {
-        let endpoint = "https://api.potterdb.com/v1/characters?page[number]=\(number)&page[size]=\(size)&sort=-name"
+        let endpoint = "\(harryPotterAPIKey ?? "")characters?page[number]=\(number)&page[size]=\(size)&sort=-name"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -57,7 +61,7 @@ struct CharacterService: CharacterServiceProtocol {
     }
     
     func getCharacterByID(characterID: String) async throws -> GetSingleCharacterResponse {
-        let endpoint = "https://api.potterdb.com/v1/characters/\(characterID)"
+        let endpoint = "\(harryPotterAPIKey ?? "")characters/\(characterID)"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         

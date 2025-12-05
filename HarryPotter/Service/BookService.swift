@@ -12,13 +12,16 @@ protocol BookServiceProtocol {
     func getBookByID(bookID: String) async throws -> GetSingleBookResponse
     func getListOfChapters(bookID: String) async throws -> GetListOfChaptersResponse
     func getChapterOfBook(bookID: String, chapterID: String) async throws -> GetSingleChapterResponse
-    func getRandomBook(number: Int) async throws -> GetListOfBooksResponse
+    func getRandomBook() async throws -> GetListOfBooksResponse
 }
 
 class BookService: BookServiceProtocol {
     
+    static let env = EnvironmentManager.standard
+    let harryPotterAPIKey = CharacterService.env.endpoint
+    
     func getListOfBooks() async throws -> GetListOfBooksResponse {
-        let endpoint = "https://api.potterdb.com/v1/books/"
+        let endpoint = "\(harryPotterAPIKey ?? "")books/"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -39,7 +42,7 @@ class BookService: BookServiceProtocol {
     }
     
     func getBookByID(bookID: String) async throws -> GetSingleBookResponse {
-        let endpoint = "https://api.potterdb.com/v1/books/\(bookID)"
+        let endpoint = "\(harryPotterAPIKey ?? "")books/\(bookID)"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -60,7 +63,7 @@ class BookService: BookServiceProtocol {
     }
     
     func getListOfChapters(bookID: String) async throws -> GetListOfChaptersResponse {
-        let endpoint = "https://api.potterdb.com/v1/books/\(bookID)/chapters"
+        let endpoint = "\(harryPotterAPIKey ?? "")books/\(bookID)/chapters"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -81,7 +84,7 @@ class BookService: BookServiceProtocol {
     }
     
     func getChapterOfBook(bookID: String, chapterID: String) async throws -> GetSingleChapterResponse {
-        let endpoint = "https://api.potterdb.com/v1/books/\(bookID)/chapters/\(chapterID)"
+        let endpoint = "\(harryPotterAPIKey ?? "")books/\(bookID)/chapters/\(chapterID)"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -101,8 +104,8 @@ class BookService: BookServiceProtocol {
         }
     }
     
-    func getRandomBook(number: Int) async throws -> GetListOfBooksResponse {
-        let endpoint = "https://api.potterdb.com/v1/books?page[number]=\(number)&page[size]=3"
+    func getRandomBook() async throws -> GetListOfBooksResponse {
+        let endpoint = "\(harryPotterAPIKey ?? "")books?page[size]=3"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         

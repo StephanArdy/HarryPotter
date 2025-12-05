@@ -65,6 +65,10 @@ struct BookView: View {
             await viewModel
                 .loadBooks()
         }
+        .refreshable {
+            await viewModel
+                .loadBooks()
+        }
     }
 }
 

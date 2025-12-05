@@ -13,8 +13,12 @@ protocol SpellServiceProtocol {
 }
 
 class SpellService: SpellServiceProtocol {
+    
+    static let env = EnvironmentManager.standard
+    let harryPotterAPIKey = CharacterService.env.endpoint
+    
     func getListOfSpells(number: Int, size: Int) async throws -> GetListOfSpellsResponse {
-        let endpoint = "https://api.potterdb.com/v1/spells?page[number]=\(number)&page[size]=\(size)"
+        let endpoint = "\(harryPotterAPIKey ?? "")spells?page[number]=\(number)&page[size]=\(size)"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -35,7 +39,7 @@ class SpellService: SpellServiceProtocol {
     }
     
     func getSpellByID(spellID: String) async throws -> GetSingleSpellResponse {
-        let endpoint = "https://api.potterdb.com/v1/spells/\(spellID)"
+        let endpoint = "\(harryPotterAPIKey ?? "")spells/\(spellID)"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         

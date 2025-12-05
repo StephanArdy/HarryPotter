@@ -10,12 +10,16 @@ import Foundation
 protocol MovieServiceProtocol {
     func getListOfMovies() async throws -> GetListOfMoviesResponse
     func getMovieByID(movieID: String) async throws -> GetSingleMovieResponse
-    func getRandomMovie(number: Int) async throws -> GetListOfMoviesResponse
+    func getRandomMovie() async throws -> GetListOfMoviesResponse
 }
 
 class MovieService: MovieServiceProtocol {
+    
+    static let env = EnvironmentManager.standard
+    let harryPotterAPIKey = CharacterService.env.endpoint
+    
     func getListOfMovies() async throws -> GetListOfMoviesResponse {
-        let endpoint = "https://api.potterdb.com/v1/movies/"
+        let endpoint = "\(harryPotterAPIKey ?? "")movies/"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -36,7 +40,7 @@ class MovieService: MovieServiceProtocol {
     }
     
     func getMovieByID(movieID: String) async throws -> GetSingleMovieResponse {
-        let endpoint = "https://api.potterdb.com/v1/movies/\(movieID)"
+        let endpoint = "\(harryPotterAPIKey ?? "")movies/\(movieID)"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
@@ -56,8 +60,8 @@ class MovieService: MovieServiceProtocol {
         }
     }
     
-    func getRandomMovie(number: Int) async throws -> GetListOfMoviesResponse {
-        let endpoint = "https://api.potterdb.com/v1/movies?page[number]=\(number)&page[size]=3"
+    func getRandomMovie() async throws -> GetListOfMoviesResponse {
+        let endpoint = "\(harryPotterAPIKey ?? "")movies?page[size]=3"
         
         guard let url = URL(string: endpoint) else { throw NetworkingError.invalidURL}
         
